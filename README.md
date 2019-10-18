@@ -37,3 +37,11 @@ This will be an individual project but you can ask questions on your PLG slack g
 
 - Share your project with your teammates with details of your project so that they can give comments and feedback.
 - Share what you have done with the world. Share your project (Links/Screenshots) on social media using [#150DaysofALC4](https://twitter.com/search?q=%23150DaysOfALC4) [#GoogleAfricaDeveloperScholarship](https://twitter.com/search?q=%23GoogleAfricaDeveloperScholarship) and tag [@Andela_ALC](https://twitter.com/andela_alc/).
+
+## Troubleshooting
+
+While build the Docker image on Windows the process terminated with an error stating that `react-scripts` command would not be available to complete the build of the React app. Hence, `react-scripts` are installed globally during the build-stage.
+
+```
+RUN npm i -g react-scripts
+```
