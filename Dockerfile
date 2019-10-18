@@ -9,6 +9,7 @@ RUN npm run build
 
 # production stage
 FROM nginx:stable-alpine as production-stage
+RUN apk add --no-cache bash
 COPY --from=build-stage /app/build /usr/share/nginx/html
 
 COPY env.sh /usr/share/nginx/html
