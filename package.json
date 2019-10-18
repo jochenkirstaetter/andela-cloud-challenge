@@ -1,6 +1,12 @@
 {
   "name": "andela-cloud-challenge",
-  "version": "4.0",
+  "version": "4.0.0",
+  "description": "ALC 4.0 Cloud Challenge",
+  "repository": {
+    "url": "https://github.com/jochenkirstaetter/andela-cloud-challenge.git"
+  },
+  "readme": "README.md",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "react": "^16.10.2",
