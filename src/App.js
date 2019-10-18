@@ -9,7 +9,15 @@ function App() {
         <h1>ALC 4.0 Cloud Challenge I</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Challenge accepted: {window._env_.SITE_URL}
+          Challenge:&nbsp;
+          <a
+            className="App-status"
+            href={window._env_.SITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {window._env_.SITE_STATUS}
+          </a>
         </p>
         <a
           className="App-link"

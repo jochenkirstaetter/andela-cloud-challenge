@@ -20,3 +20,8 @@
 .App-link {
   color: #046666;
 }
+
+.App-status {
+  color: #282c34;
+  /* text-decoration: none; */
+}
