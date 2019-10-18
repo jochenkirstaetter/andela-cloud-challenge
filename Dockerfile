@@ -1,11 +1,13 @@
-FROM node as build-deps
-WORKDIR /usr/src/app
-COPY package.json yarn.lock ./
+# build stage
+FROM node:lts-alpine as build-stage
+WORKDIR /app
+COPY package*.json yarn.lock ./
 RUN npm install
 COPY . ./
 RUN npm run build
 
-FROM nginx:1.12-alpine
-COPY --from=build-deps /usr/src/app/build /usr/share/nginx/html
+# production stage
+FROM nginx:stable-alpine as production-stage
+COPY --from=build-stage /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
