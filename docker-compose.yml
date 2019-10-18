@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  nginx:
+    build: .
+    ports:
+      - 80:8080
+    environment:
+      - SITE_URL=https://jochen.kirstaetter.name
