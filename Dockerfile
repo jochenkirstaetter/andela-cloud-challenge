@@ -3,7 +3,7 @@ FROM node:lts-alpine as build-stage
 RUN npm i -g react-scripts
 WORKDIR /app
 COPY package*.json yarn.lock ./
-RUN npm install
+RUN npm ci
 COPY . ./
 RUN npm run build
 
