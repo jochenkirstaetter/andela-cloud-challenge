@@ -1,0 +1,16 @@
+{
+    "name": "andela-cloud-challenge",
+    "env": {
+        "SITE_URL": {
+            "description": "Provide an URL to link to (default: #)",
+            "value": "https://jochen.kirstaetter.name/alc4-cloud-run/"
+        },
+        "SITE_STATUS": {
+            "description": "Specify state of the React app",
+            "value": "Accepted"
+        }
+    },
+    "options": {
+        "allow-unauthenticated": true
+    }
+}
