@@ -45,3 +45,9 @@ While build the Docker image on Windows the process terminated with an error sta
 ```
 RUN npm i -g react-scripts
 ```
+
+## Cloud Run Button
+
+You can directly try out the application and launch it on Cloud Run by clicking on the button below.
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/jochenkirstaetter/andela-cloud-challenge.git&revision=cloudrun)
