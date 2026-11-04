@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const env = window._env_ || {};
   return (
     <div className="App">
       <header className="App-header">
@@ -12,11 +13,11 @@ function App() {
           Challenge:&nbsp;
           <a
             className="App-status"
-            href={window._env_.SITE_URL}
+            href={env.SITE_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {window._env_.SITE_STATUS}
+            {env.SITE_STATUS}
           </a>
         </p>
         <a
